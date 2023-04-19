@@ -1,4 +1,3 @@
-#include "cfgPrintPass.h"
 #include "dataflowPass.h"
 #include "llvm/Passes/PassBuilder.h"
 #include "llvm/Passes/PassPlugin.h"
@@ -7,16 +6,10 @@ using namespace llvm;
 
 bool registerPipeline(StringRef Name, FunctionPassManager &FPM,
                       ArrayRef<PassBuilder::PipelineElement>) {
-    
-    if (Name == "cfgPrint") {
-        FPM.addPass(cfgPrint::cfgPrintPass(errs()));
-        return true;
-    }
     if (Name == "dfg") {
         FPM.addPass(dataflow::dataflowPass(errs()));
         return true;
     }
-
     return false;
 }
 

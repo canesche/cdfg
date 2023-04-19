@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/canesche/git/hlsmc-project
+CMAKE_SOURCE_DIR = /home/canesche/git/cdfg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/canesche/git/hlsmc-project/build
+CMAKE_BINARY_DIR = /home/canesche/git/cdfg/build
 
 # Include any dependencies generated for this target.
 include lib/CMakeFiles/hlsmc.dir/depend.make
@@ -70,32 +70,32 @@ include lib/CMakeFiles/hlsmc.dir/progress.make
 include lib/CMakeFiles/hlsmc.dir/flags.make
 
 lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o: lib/CMakeFiles/hlsmc.dir/flags.make
-lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o: /home/canesche/git/hlsmc-project/lib/dataflowPass.cpp
+lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o: /home/canesche/git/cdfg/lib/dataflowPass.cpp
 lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o: lib/CMakeFiles/hlsmc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/canesche/git/hlsmc-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o"
-	cd /home/canesche/git/hlsmc-project/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o -MF CMakeFiles/hlsmc.dir/dataflowPass.cpp.o.d -o CMakeFiles/hlsmc.dir/dataflowPass.cpp.o -c /home/canesche/git/hlsmc-project/lib/dataflowPass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/canesche/git/cdfg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o"
+	cd /home/canesche/git/cdfg/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o -MF CMakeFiles/hlsmc.dir/dataflowPass.cpp.o.d -o CMakeFiles/hlsmc.dir/dataflowPass.cpp.o -c /home/canesche/git/cdfg/lib/dataflowPass.cpp
 
 lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hlsmc.dir/dataflowPass.cpp.i"
-	cd /home/canesche/git/hlsmc-project/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/canesche/git/hlsmc-project/lib/dataflowPass.cpp > CMakeFiles/hlsmc.dir/dataflowPass.cpp.i
+	cd /home/canesche/git/cdfg/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/canesche/git/cdfg/lib/dataflowPass.cpp > CMakeFiles/hlsmc.dir/dataflowPass.cpp.i
 
 lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hlsmc.dir/dataflowPass.cpp.s"
-	cd /home/canesche/git/hlsmc-project/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/canesche/git/hlsmc-project/lib/dataflowPass.cpp -o CMakeFiles/hlsmc.dir/dataflowPass.cpp.s
+	cd /home/canesche/git/cdfg/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/canesche/git/cdfg/lib/dataflowPass.cpp -o CMakeFiles/hlsmc.dir/dataflowPass.cpp.s
 
 lib/CMakeFiles/hlsmc.dir/plugin.cpp.o: lib/CMakeFiles/hlsmc.dir/flags.make
-lib/CMakeFiles/hlsmc.dir/plugin.cpp.o: /home/canesche/git/hlsmc-project/lib/plugin.cpp
+lib/CMakeFiles/hlsmc.dir/plugin.cpp.o: /home/canesche/git/cdfg/lib/plugin.cpp
 lib/CMakeFiles/hlsmc.dir/plugin.cpp.o: lib/CMakeFiles/hlsmc.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/canesche/git/hlsmc-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/hlsmc.dir/plugin.cpp.o"
-	cd /home/canesche/git/hlsmc-project/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/hlsmc.dir/plugin.cpp.o -MF CMakeFiles/hlsmc.dir/plugin.cpp.o.d -o CMakeFiles/hlsmc.dir/plugin.cpp.o -c /home/canesche/git/hlsmc-project/lib/plugin.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/canesche/git/cdfg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object lib/CMakeFiles/hlsmc.dir/plugin.cpp.o"
+	cd /home/canesche/git/cdfg/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT lib/CMakeFiles/hlsmc.dir/plugin.cpp.o -MF CMakeFiles/hlsmc.dir/plugin.cpp.o.d -o CMakeFiles/hlsmc.dir/plugin.cpp.o -c /home/canesche/git/cdfg/lib/plugin.cpp
 
 lib/CMakeFiles/hlsmc.dir/plugin.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hlsmc.dir/plugin.cpp.i"
-	cd /home/canesche/git/hlsmc-project/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/canesche/git/hlsmc-project/lib/plugin.cpp > CMakeFiles/hlsmc.dir/plugin.cpp.i
+	cd /home/canesche/git/cdfg/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/canesche/git/cdfg/lib/plugin.cpp > CMakeFiles/hlsmc.dir/plugin.cpp.i
 
 lib/CMakeFiles/hlsmc.dir/plugin.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hlsmc.dir/plugin.cpp.s"
-	cd /home/canesche/git/hlsmc-project/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/canesche/git/hlsmc-project/lib/plugin.cpp -o CMakeFiles/hlsmc.dir/plugin.cpp.s
+	cd /home/canesche/git/cdfg/build/lib && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/canesche/git/cdfg/lib/plugin.cpp -o CMakeFiles/hlsmc.dir/plugin.cpp.s
 
 # Object files for target hlsmc
 hlsmc_OBJECTS = \
@@ -109,18 +109,18 @@ lib/libhlsmc.so: lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o
 lib/libhlsmc.so: lib/CMakeFiles/hlsmc.dir/plugin.cpp.o
 lib/libhlsmc.so: lib/CMakeFiles/hlsmc.dir/build.make
 lib/libhlsmc.so: lib/CMakeFiles/hlsmc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/canesche/git/hlsmc-project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module libhlsmc.so"
-	cd /home/canesche/git/hlsmc-project/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hlsmc.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/canesche/git/cdfg/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared module libhlsmc.so"
+	cd /home/canesche/git/cdfg/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/hlsmc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 lib/CMakeFiles/hlsmc.dir/build: lib/libhlsmc.so
 .PHONY : lib/CMakeFiles/hlsmc.dir/build
 
 lib/CMakeFiles/hlsmc.dir/clean:
-	cd /home/canesche/git/hlsmc-project/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/hlsmc.dir/cmake_clean.cmake
+	cd /home/canesche/git/cdfg/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/hlsmc.dir/cmake_clean.cmake
 .PHONY : lib/CMakeFiles/hlsmc.dir/clean
 
 lib/CMakeFiles/hlsmc.dir/depend:
-	cd /home/canesche/git/hlsmc-project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/canesche/git/hlsmc-project /home/canesche/git/hlsmc-project/lib /home/canesche/git/hlsmc-project/build /home/canesche/git/hlsmc-project/build/lib /home/canesche/git/hlsmc-project/build/lib/CMakeFiles/hlsmc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/canesche/git/cdfg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/canesche/git/cdfg /home/canesche/git/cdfg/lib /home/canesche/git/cdfg/build /home/canesche/git/cdfg/build/lib /home/canesche/git/cdfg/build/lib/CMakeFiles/hlsmc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : lib/CMakeFiles/hlsmc.dir/depend
 

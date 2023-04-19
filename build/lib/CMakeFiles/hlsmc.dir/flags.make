@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dhlsmc_EXPORTS
 
-CXX_INCLUDES = -I/home/canesche/git/llvm-16/llvm/include -I/home/canesche/git/llvm-16/build/include -I/home/canesche/git/hlsmc-project/lib/../include
+CXX_INCLUDES = -I/home/canesche/git/llvm-16/llvm/include -I/home/canesche/git/llvm-16/build/include -I/home/canesche/git/cdfg/lib/../include
 
 CXX_FLAGS =  -O3 -fno-rtti -fno-rtti -std=gnu++17 -fPIC   -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS
 

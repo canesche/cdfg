@@ -7,11 +7,11 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/canesche/git/hlsmc-project/CMakeLists.txt"
+  "/home/canesche/git/cdfg/CMakeLists.txt"
   "CMakeFiles/3.26.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.26.3/CMakeSystem.cmake"
-  "/home/canesche/git/hlsmc-project/lib/CMakeLists.txt"
+  "/home/canesche/git/cdfg/lib/CMakeLists.txt"
   "/home/canesche/git/llvm-16/build/lib/cmake/llvm/FindTerminfo.cmake"
   "/home/canesche/git/llvm-16/build/lib/cmake/llvm/LLVMBuildTreeOnlyTargets.cmake"
   "/home/canesche/git/llvm-16/build/lib/cmake/llvm/LLVMConfig.cmake"

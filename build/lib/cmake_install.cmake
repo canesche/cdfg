@@ -1,4 +1,4 @@
-# Install script for directory: /home/canesche/git/hlsmc-project/lib
+# Install script for directory: /home/canesche/git/cdfg/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

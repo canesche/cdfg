@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/canesche/git/hlsmc-project
+CMAKE_SOURCE_DIR = /home/canesche/git/cdfg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/canesche/git/hlsmc-project/build
+CMAKE_BINARY_DIR = /home/canesche/git/cdfg/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/canesche/git/hlsmc-project/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/canesche/git/hlsmc-project/build/CMakeFiles /home/canesche/git/hlsmc-project/build/lib//CMakeFiles/progress.marks
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/canesche/git/hlsmc-project/build/CMakeFiles 0
+	cd /home/canesche/git/cdfg/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/canesche/git/cdfg/build/CMakeFiles /home/canesche/git/cdfg/build/lib//CMakeFiles/progress.marks
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/canesche/git/cdfg/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/canesche/git/hlsmc-project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/canesche/git/cdfg/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 lib/CMakeFiles/hlsmc.dir/rule:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/hlsmc.dir/rule
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/CMakeFiles/hlsmc.dir/rule
 .PHONY : lib/CMakeFiles/hlsmc.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ hlsmc: lib/CMakeFiles/hlsmc.dir/rule
 
 # fast build rule for target.
 hlsmc/fast:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/build
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/build
 .PHONY : hlsmc/fast
 
 dataflowPass.o: dataflowPass.cpp.o
@@ -135,7 +135,7 @@ dataflowPass.o: dataflowPass.cpp.o
 
 # target to build an object file
 dataflowPass.cpp.o:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o
 .PHONY : dataflowPass.cpp.o
 
 dataflowPass.i: dataflowPass.cpp.i
@@ -143,7 +143,7 @@ dataflowPass.i: dataflowPass.cpp.i
 
 # target to preprocess a source file
 dataflowPass.cpp.i:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.i
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.i
 .PHONY : dataflowPass.cpp.i
 
 dataflowPass.s: dataflowPass.cpp.s
@@ -151,7 +151,7 @@ dataflowPass.s: dataflowPass.cpp.s
 
 # target to generate assembly for a file
 dataflowPass.cpp.s:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.s
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.s
 .PHONY : dataflowPass.cpp.s
 
 plugin.o: plugin.cpp.o
@@ -159,7 +159,7 @@ plugin.o: plugin.cpp.o
 
 # target to build an object file
 plugin.cpp.o:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/plugin.cpp.o
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/plugin.cpp.o
 .PHONY : plugin.cpp.o
 
 plugin.i: plugin.cpp.i
@@ -167,7 +167,7 @@ plugin.i: plugin.cpp.i
 
 # target to preprocess a source file
 plugin.cpp.i:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/plugin.cpp.i
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/plugin.cpp.i
 .PHONY : plugin.cpp.i
 
 plugin.s: plugin.cpp.s
@@ -175,7 +175,7 @@ plugin.s: plugin.cpp.s
 
 # target to generate assembly for a file
 plugin.cpp.s:
-	cd /home/canesche/git/hlsmc-project/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/plugin.cpp.s
+	cd /home/canesche/git/cdfg/build && $(MAKE) $(MAKESILENT) -f lib/CMakeFiles/hlsmc.dir/build.make lib/CMakeFiles/hlsmc.dir/plugin.cpp.s
 .PHONY : plugin.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/canesche/git/hlsmc-project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/canesche/git/cdfg/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

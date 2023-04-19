@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/canesche/git/hlsmc-project
+CMAKE_SOURCE_DIR = /home/canesche/git/cdfg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/canesche/git/hlsmc-project/build
+CMAKE_BINARY_DIR = /home/canesche/git/cdfg/build
 
 # Utility rule file for omp_gen.
 
@@ -78,6 +78,6 @@ CMakeFiles/omp_gen.dir/clean:
 .PHONY : CMakeFiles/omp_gen.dir/clean
 
 CMakeFiles/omp_gen.dir/depend:
-	cd /home/canesche/git/hlsmc-project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/canesche/git/hlsmc-project /home/canesche/git/hlsmc-project /home/canesche/git/hlsmc-project/build /home/canesche/git/hlsmc-project/build /home/canesche/git/hlsmc-project/build/CMakeFiles/omp_gen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/canesche/git/cdfg/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/canesche/git/cdfg /home/canesche/git/cdfg /home/canesche/git/cdfg/build /home/canesche/git/cdfg/build /home/canesche/git/cdfg/build/CMakeFiles/omp_gen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/omp_gen.dir/depend
 

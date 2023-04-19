@@ -15,6 +15,7 @@
 #include <tuple>
 #include <unordered_map>
 
+#include "llvm/IR/Constants.h"
 #include "llvm/IR/PassManager.h"
 #include "llvm/IR/InstrTypes.h"
 #include "llvm/IR/Function.h"
