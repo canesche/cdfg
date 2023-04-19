@@ -1,0 +1,8 @@
+digraph G {
+a -> icmp_sgt
+b -> icmp_sgt
+icmp_sgt -> select
+a -> select
+b -> select
+select -> out
+}

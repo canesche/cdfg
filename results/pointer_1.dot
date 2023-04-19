@@ -1,0 +1,9 @@
+digraph G {
+a -> load
+load -> add
+"1" -> add
+b -> getelemptr
+"3" -> getelemptr
+add -> store
+getelemptr -> store
+}

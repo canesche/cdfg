@@ -1,0 +1,7 @@
+digraph G {
+a -> shl0
+Const_1 -> shl0
+shl0 -> add1
+b -> add1
+add1 -> output
+}

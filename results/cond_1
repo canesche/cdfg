@@ -1,0 +1,8 @@
+digraph G {
+a -> icmp0
+b -> icmp0
+icmp0 -> select1
+a -> select1
+b -> select1
+select1 -> output
+}

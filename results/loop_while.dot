@@ -1,0 +1,15 @@
+digraph G {
+n -> "n.addr.0"
+add -> "n.addr.0"
+"0" -> "sum.0"
+add -> "sum.0"
+"n.addr.0" -> icmp_sgt
+"0" -> icmp_sgt
+"while.end" -> icmp_sgt
+"while.body" -> icmp_sgt
+"sum.0" -> add
+"n.addr.0" -> add
+"n.addr.0" -> add
+"-1" -> add
+"sum.0" -> out
+}

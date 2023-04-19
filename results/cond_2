@@ -1,0 +1,12 @@
+digraph G {
+a -> icmp0
+Const_1 -> icmp0
+a -> icmp1
+b -> icmp1
+icmp0 -> or2
+icmp1 -> or2
+or2 -> select3
+a -> select3
+b -> select3
+select3 -> output
+}

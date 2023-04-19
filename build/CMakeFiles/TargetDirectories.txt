@@ -1,0 +1,9 @@
+/home/canesche/git/hlsmc-project/build/CMakeFiles/intrinsics_gen.dir
+/home/canesche/git/hlsmc-project/build/CMakeFiles/omp_gen.dir
+/home/canesche/git/hlsmc-project/build/CMakeFiles/acc_gen.dir
+/home/canesche/git/hlsmc-project/build/CMakeFiles/RISCVTargetParserTableGen.dir
+/home/canesche/git/hlsmc-project/build/CMakeFiles/edit_cache.dir
+/home/canesche/git/hlsmc-project/build/CMakeFiles/rebuild_cache.dir
+/home/canesche/git/hlsmc-project/build/lib/CMakeFiles/hlsmc.dir
+/home/canesche/git/hlsmc-project/build/lib/CMakeFiles/edit_cache.dir
+/home/canesche/git/hlsmc-project/build/lib/CMakeFiles/rebuild_cache.dir

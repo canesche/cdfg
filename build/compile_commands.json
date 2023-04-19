@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/canesche/git/hlsmc-project/build/lib",
+  "command": "/usr/bin/c++ -Dhlsmc_EXPORTS -I/home/canesche/git/llvm-16/llvm/include -I/home/canesche/git/llvm-16/build/include -I/home/canesche/git/hlsmc-project/lib/../include  -O3 -fno-rtti -fno-rtti -std=gnu++17 -fPIC   -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/hlsmc.dir/dataflowPass.cpp.o -c /home/canesche/git/hlsmc-project/lib/dataflowPass.cpp",
+  "file": "/home/canesche/git/hlsmc-project/lib/dataflowPass.cpp",
+  "output": "lib/CMakeFiles/hlsmc.dir/dataflowPass.cpp.o"
+},
+{
+  "directory": "/home/canesche/git/hlsmc-project/build/lib",
+  "command": "/usr/bin/c++ -Dhlsmc_EXPORTS -I/home/canesche/git/llvm-16/llvm/include -I/home/canesche/git/llvm-16/build/include -I/home/canesche/git/hlsmc-project/lib/../include  -O3 -fno-rtti -fno-rtti -std=gnu++17 -fPIC   -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -o CMakeFiles/hlsmc.dir/plugin.cpp.o -c /home/canesche/git/hlsmc-project/lib/plugin.cpp",
+  "file": "/home/canesche/git/hlsmc-project/lib/plugin.cpp",
+  "output": "lib/CMakeFiles/hlsmc.dir/plugin.cpp.o"
+}
+]
