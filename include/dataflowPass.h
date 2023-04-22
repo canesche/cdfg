@@ -43,6 +43,7 @@ namespace dataflow {
 
         void get_map_label(Function &F);
         void BinaryNode(llvm::Instruction *I);
+        void PhiNode(llvm::Instruction *I);
         void RetNode(llvm::Instruction *I);
         void LoadNode(llvm::Instruction *I);
         void BranchNode(llvm::Instruction *I);
@@ -54,6 +55,8 @@ namespace dataflow {
             unordered_map<string, string> opInstr;
             vector<tuple<string, string>> edge; 
             ofstream outFile;
+            unsigned int count_phi = 0;
+            unsigned int count_add = 0;
     };
 
 } // namespace cfgPrint

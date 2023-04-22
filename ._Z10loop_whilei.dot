@@ -1,0 +1,12 @@
+digraph "CFG for '_Z10loop_whilei' function" {
+	label="CFG for '_Z10loop_whilei' function";
+
+	Node0x55f53d1cc4d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{entry:\l  br label %while.cond\l}"];
+	Node0x55f53d1cc4d0 -> Node0x55f53d1cc580;
+	Node0x55f53d1cc580 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{while.cond:                                       \l  %sum.0 = phi i32 [ 0, %entry ], [ %add, %while.body ]\l  %n.addr.0 = phi i32 [ %n, %entry ], [ %dec, %while.body ]\l  %cmp = icmp sgt i32 %n.addr.0, 0\l  br i1 %cmp, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
+	Node0x55f53d1cc580:s0 -> Node0x55f53d1ccce0;
+	Node0x55f53d1cc580:s1 -> Node0x55f53d1cd0d0;
+	Node0x55f53d1ccce0 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{while.body:                                       \l  %add = add nsw i32 %sum.0, %n.addr.0\l  %dec = add nsw i32 %n.addr.0, -1\l  br label %while.cond, !llvm.loop !6\l}"];
+	Node0x55f53d1ccce0 -> Node0x55f53d1cc580;
+	Node0x55f53d1cd0d0 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{while.end:                                        \l  ret i32 %sum.0\l}"];
+}

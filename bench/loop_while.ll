@@ -4,12 +4,10 @@ target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16
 target triple = "x86_64-unknown-linux-gnu"
 
 ; Function Attrs: mustprogress noinline nounwind uwtable
-define dso_local noundef i32 @_Z10loop_whilePii(ptr noundef %a, i32 noundef %n) #0 {
+define dso_local noundef i32 @_Z10loop_whilei(i32 noundef %n) #0 {
 entry:
-  %a.addr = alloca ptr, align 8
   %n.addr = alloca i32, align 4
   %sum = alloca i32, align 4
-  store ptr %a, ptr %a.addr, align 8
   store i32 %n, ptr %n.addr, align 4
   store i32 0, ptr %sum, align 4
   br label %while.cond

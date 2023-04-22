@@ -1,12 +1,12 @@
 digraph "CFG for '_Z10loop_whilePii' function" {
 	label="CFG for '_Z10loop_whilePii' function";
 
-	Node0x55b0fb12f560 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{entry:\l  br label %while.cond\l}"];
-	Node0x55b0fb12f560 -> Node0x55b0fb12f610;
-	Node0x55b0fb12f610 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{while.cond:                                       \l  %n.addr.0 = phi i32 [ %n, %entry ], [ %dec, %while.body ]\l  %sum.0 = phi i32 [ 0, %entry ], [ %add, %while.body ]\l  %cmp = icmp sgt i32 %n.addr.0, 0\l  br i1 %cmp, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
-	Node0x55b0fb12f610:s0 -> Node0x55b0fb12f700;
-	Node0x55b0fb12f610:s1 -> Node0x55b0fb130130;
-	Node0x55b0fb12f700 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{while.body:                                       \l  %add = add nsw i32 %sum.0, %n.addr.0\l  %dec = add nsw i32 %n.addr.0, -1\l  br label %while.cond, !llvm.loop !6\l}"];
-	Node0x55b0fb12f700 -> Node0x55b0fb12f610;
-	Node0x55b0fb130130 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{while.end:                                        \l  ret i32 %sum.0\l}"];
+	Node0x559924810560 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{entry:\l  br label %while.cond\l}"];
+	Node0x559924810560 -> Node0x559924810610;
+	Node0x559924810610 [shape=record,color="#b70d28ff", style=filled, fillcolor="#b70d2870",label="{while.cond:                                       \l  %n.addr.0 = phi i32 [ %n, %entry ], [ %dec, %while.body ]\l  %sum.0 = phi i32 [ 0, %entry ], [ %add, %while.body ]\l  %cmp = icmp sgt i32 %n.addr.0, 0\l  br i1 %cmp, label %while.body, label %while.end\l|{<s0>T|<s1>F}}"];
+	Node0x559924810610:s0 -> Node0x559924810700;
+	Node0x559924810610:s1 -> Node0x559924811130;
+	Node0x559924810700 [shape=record,color="#b70d28ff", style=filled, fillcolor="#bb1b2c70",label="{while.body:                                       \l  %add = add nsw i32 %sum.0, %n.addr.0\l  %dec = add nsw i32 %n.addr.0, -1\l  br label %while.cond, !llvm.loop !6\l}"];
+	Node0x559924810700 -> Node0x559924810610;
+	Node0x559924811130 [shape=record,color="#3d50c3ff", style=filled, fillcolor="#b9d0f970",label="{while.end:                                        \l  ret i32 %sum.0\l}"];
 }

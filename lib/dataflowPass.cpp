@@ -40,7 +40,11 @@ namespace dataflow {
                 } else if (isa<GetElementPtrInst>(I)) {
                     opInstr[s] = "getelemptr";
                 } else if (isa<BranchInst>(I)) {
-                    errs() << I << "\n";
+                    //errs() << I << "\n";
+                } else if (isa<BinaryOperator>(I)){
+                    if (I.getOpcode() == 13) { // ADD
+                        opInstr[s] = "add_" + to_string(count_add++);
+                    }
                 } else if (!isa<SExtInst>(I) && !isa<BranchInst>(I) && !isa<PHINode>(I) 
                     && !isa<ReturnInst>(I) && !isa<StoreInst>(I)) {
                     opInstr[s] = I.getOpcodeName();
@@ -81,11 +85,13 @@ namespace dataflow {
 
         // get the opcode name of each instruction
         int opcode = I->getOpcode();
-        errs() << opcode << "\n";
 
         switch (opcode) {
             case Instruction::Ret: // Return
                 RetNode(I); 
+                break;
+            case Instruction::PHI: // Phi
+                PhiNode(I);
                 break;
             case Instruction::Store: // load 
                 LoadNode(I);
@@ -93,8 +99,11 @@ namespace dataflow {
             case Instruction::Br:
                 BranchNode(I);
                 break;
+            case Instruction::Add:
+                BinaryNode(I);
+                break;
             default: // other type
-                BinaryNode(I); 
+                errs() << "No instruction: " << *I << "\n";
                 break;
         }
     }
@@ -110,7 +119,22 @@ namespace dataflow {
         }
     }
 
+    void dataflowPass::PhiNode(llvm::Instruction *I) {
+        string phi_name = "phi_" + to_string(count_phi++);
+        for (int i = 0; i < I->getNumOperands(); ++i) {
+            if (const ConstantInt *CI = dyn_cast<ConstantInt>(I->getOperand(i))) {
+                string c = "\"" + to_string(CI->getSExtValue()) + "\"";
+                edge.push_back(make_tuple(c, phi_name));
+            } else {
+                edge.push_back(make_tuple(getName(I->getOperand(i)), phi_name));
+            }
+        }
+        edge.push_back(make_tuple(phi_name, getName(I)));
+    }
+
     void dataflowPass::BranchNode(llvm::Instruction *I) {
+        errs() << *I << "\n";
+        /*
         for (int i = 1; i < I->getNumOperands(); ++i) {
             if (isa<ConstantInt>(I->getOperand(i))) {
                 string c = "const_" + to_string(dyn_cast<ConstantInt>(I->getOperand(i))->getZExtValue());
@@ -119,7 +143,7 @@ namespace dataflow {
                 errs() << getName(I->getOperand(i)) << " " << getName(I->getOperand(0)) << "\n";
                 edge.push_back(make_tuple(getName(I->getOperand(i)), getName(I->getOperand(0))));
             }
-        }
+        }*/
     }
 
     void dataflowPass::LoadNode(llvm::Instruction *I) {
